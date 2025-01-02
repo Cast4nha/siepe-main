@@ -1,0 +1,49 @@
+networks:
+  network1:
+
+services:
+  siepe-bd:
+    container_name: siepe-bd
+    hostname: siepe-bd
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: unifesspa
+      POSTGRES_DB: siepe
+    ports:
+      - "5432:5432"
+    volumes:
+      # - ./pg_siepe:/var/lib/postgresql/data
+      - ./databases/dump_siepe_populado.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always
+    networks:
+      - network1
+
+  php-apache-environment:
+    container_name: siepe
+    build: .
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - 80:80
+    depends_on:
+      - siepe-bd
+    networks:
+      - network1
+
+  chatgpt-service:
+    build:
+      context: ./chatgpt
+      dockerfile: Dockerfile
+    container_name: chatgpt-service
+    restart: unless-stopped
+    environment:
+      - GOOGLE_API_KEY=AIzaSyBa0Xe84YJ2ni_hJv0-h4RUBiYkhrjKkXE
+      - NODE_ENV=development
+    volumes:
+      - ./chatgpt:/app
+      - /app/node_modules
+    ports:
+      - "3001:3001"
+    networks:
+      - network1

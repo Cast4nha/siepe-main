@@ -1,0 +1,62 @@
+#brasao {
+	width: 75px;
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 45%;
+}
+.header_text {
+	text-align: center; 
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.1;
+	font-weight: bold;
+}
+.title {
+	text-align: center; 
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.1;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.desc {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+table {
+    border-collapse: collapse;
+    margin:auto;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+	height: 50px;
+	text-align: center;
+}
+
+th, td {
+	font-family: Arial, sans-serif;
+}
+
+.line-footer {
+	margin: 0;
+}
+
+.wrong-search {
+	font-family: Arial, sans-serif;
+	font-size: 16px; 
+	text-align: center;
+}
+
+.footer {
+	font-family: Arial;
+	font-size: 12px;
+	margin: 0;
+}

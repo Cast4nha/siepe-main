@@ -1,0 +1,24 @@
+###INSTRUÇÕES PARA CONVERSÃO E IMPORTAÇÃO DAS BASES DE DADOS - MYSQL -> POSTGRESQL###
+
+# Fazer download do Script de conversão e entrar no seu diretório.
+
+git clone https://github.com/lanyrd/mysql-postgresql-converter.git
+
+cd mysql-postgresql-converter 
+
+# Fazer dump da database com compatibilidade com o Postgres
+
+mysqldump -u usuario -p --compatible=postgresql --default-character=utf8 database > nome_do_arquivo.mysql
+
+# Converter o padrão de  MySQL para Postgres:
+
+python db_converter.py [DIR]/arquivo.mysql arquivo.psql
+
+# Criar uma databse no Postgres, e faça a importação dos dados
+
+psql -h localhost -d database -U usuario -W < arquivo.psql
+
+#######################################################
+
+# Instruções adaptadas com ajuda do artigo abaixo.
+Fonte: https://www.vivaolinux.com.br/artigo/Como-migrar-banco-de-dados-MySQL-para-PostgreSQL

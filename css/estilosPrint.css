@@ -1,0 +1,615 @@
+.cabecalho {
+	display: none;
+}
+
+.principal {
+	display: none;
+}
+
+#nav{
+	display: none;
+}
+
+.smOW{
+	display: none;
+}
+
+.menu1{
+	display: none;
+}
+
+.breakPage{
+	page-break-before: always;
+}
+
+
+
+INPUT:FOCUS {
+	border: #867d94 2px solid; /*rgb(185,196,226) 2px solid;*/
+}
+
+input,textarea,select {
+	font-size: 12px;
+}
+
+TEXTAREA:FOCUS {
+	border: #867d94 2px solid;
+}
+
+a:LINK {
+	text-decoration: underline;
+	text-transform: none;
+	color: black;
+}
+
+a:VISITED {
+	color: navy;
+}
+
+a:HOVER {
+	color: red;
+}
+
+a:ACTIVE {
+	color: green;
+}
+
+#titulo {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+#subTitulo {
+	font-size: 1.0em;
+	font-weight: bold;
+}
+
+IMG {
+	text-decoration: none;
+	border: 0px;
+	padding-top: 8px;
+}
+
+FIELDSET {
+	float: left;
+	width: 910px;
+	margin: 0 0 5px 0;
+}
+
+body {
+	font-family: sans-serif, Verdana;
+	background-color: #12002c;
+	font-size: 12px;
+	width: 950px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#corpo {
+	width: 950px; /*90%;*/
+}
+
+#pag {
+	text-align: center;
+	background-color: #ffffff;
+	width: auto;
+	height: auto;
+	margin-top: 0px;
+}
+
+#rod {
+	font-weight: bold;
+	min-height: 50px;
+	background-color: #005f3f;
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+}
+
+form.login {
+	width: 400px;
+	margin: 0 auto;
+}
+
+form.login .text {
+	font-size: 11;
+}
+
+form.login .submit {
+	font-size: 11;
+	width: 50px;
+}
+
+div.content2 {
+	width: 100%;
+	border: 1px black medium;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+
+
+div.principal {
+	background-color: white;
+	padding-bottom: 10px;
+	width: 950px;
+}
+
+/** estilo da div LOGIN **/
+div.login {
+	margin: auto auto;
+	height: 200px;
+	width: 400px;
+	/*background-color: yellow;*/
+}
+
+div.login .linha {
+	height: 25px;
+	width: 400px;
+	float: left;
+	/*background-color: green;*/
+}
+
+div.login .linha .label {
+	height: 25px;
+	width: 150px;
+	float: left;
+	font-size: 11;
+	/*background-color: blue;*/
+}
+
+.labelConsulta {
+	height: 28px;
+	width: 175px;
+	float: left;
+	text-align: right;
+	color: #30304f;
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+div.login .linha .coluna {
+	height: 25px;
+	width: 200px;
+	float: left;
+	/*background-color: blue;*/
+}
+
+/*** caixas de avisos, informa��es e alertas ***/
+.caixa {
+	border: 1px solid #dedede;
+	margin: 3px auto;
+	padding: .1em;
+	font-size: 95%;
+	float: center;
+	background-repeat: no-repeat;
+	background-position: 8px;
+}
+
+.caixa.info {
+	background-image: url(../../styles/images/Information_32x32.png);
+	background-color: #e5f3f9;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin-bottom: 10px;
+	text-align: left :
+}
+
+.caixa.sucesso {
+	background-image: url(../../styles/images/Check_32x32.png);
+	background-color: #e3f6cc;
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin-bottom: 10px;
+}
+
+.caixa.erro {
+	background-image: url(../../styles/images/Remove_32x32.png);
+	background-color: #ffd6d6;
+	font-size: 11px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin-bottom: 10px 0px 10px 0px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.caixa.atencao {
+	background-image: url(../../styles/images/warning-32x32.png);
+	background-color: #fff3bb;
+	font-size: 11px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.caixa.usuario {
+	background-image: url(../../styles/images/icons/Key_32x32.png);
+	background-color: #fcffbf;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.caixa.aux {
+	float: left;
+	vertical-align: middle;
+}
+
+#caixatexto {
+	font-size: 11px;
+	margin-left: 50px;
+	width: auto;
+	text-align: left;
+}
+
+.caixa.consulta {
+	border: 1px dotted #373737;
+	width: 90%;
+	font-size: 11px;
+	padding-left: 10px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin-bottom: 8px;
+	vertical-align: middle;
+}
+
+.caixalogin {
+	height: 150px;
+	padding: 8px 0px 0px 0px;
+	margin: 2px 0px 20px 291px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	width: 440px;
+	float: none;
+}
+
+.formTitulo 
+{
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+	padding: 10px 0px 5px;
+	margin-bottom: 15px;
+	float: left;
+	border-bottom: 1px double black;
+}
+
+.formSubTitulo {
+	font-size: 13px;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+	margin: 10px 0px 5px;
+	float: left;
+	border-bottom: 1px solid black;
+}
+
+.formTituloCampo {
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+	margin: 10px 0px 5px;
+	float: left;
+	text-decoration: underline;
+}
+
+.form {
+	text-align: left;
+	width: 100%;
+	height: auto;
+	margin-bottom: 0px;
+	margin-top: 2px;
+	float: left;
+}
+
+.submit {
+	text-align: center;
+}
+
+.botao {
+	background-color: #113178; /*1f5087*/
+	border: 1px solid #c8cdd2;
+	color: #f7f7f7;
+	float: none;
+}
+
+.label {
+	width: 110px;
+	height: 20px;
+	float: left;
+	text-align: right;
+	vertical-align: middle;
+	color: #30304f;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.labelg {
+	width: 150px;
+	height: 20px;
+	float: left;
+	text-align: right;
+	vertical-align: middle;
+	color: #30304f;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.content {
+	width: 950px;
+	padding-bottom: 10px;
+	background-color: white;
+	float: left;
+}
+
+#content {
+	width: 940px;
+	padding-left: 10px;
+}
+
+#imgMessage {
+	height: 25px;
+	width: 30px;
+	padding-bottom: 4px;
+}
+
+#destaque {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#informativo {
+	color: #999999;
+	font-style: italic;
+	font-size: 0.7em;
+}
+
+/** estilo utilizado em consultas **/
+.consultaTitulo {
+	border: 1px dotted #d5c9ff;
+	width: 98%;
+	height: auto;
+	background-color: #8a92c4;
+	margin: 0px 10px 2px 2px;
+}
+
+#consulta {
+	text-align: left;
+	float: left;
+}
+
+#consulta:hover {
+	background-color: #8a92c4;
+}
+
+#consulta:active {
+	background-color: #8a92c4;
+}
+
+.consulta0 {
+	width: 98%;
+	height: auto;
+	background-color: #d5c9ff;
+	margin: 0px 10px 2px 2px;
+}
+
+consulta0:hover {
+	background-color: #8a92c4;
+}
+
+.consulta1 {
+	width: 98%;
+	height: auto;
+	background-color: #f0f0f0;
+	margin: 0px 10px 2px 2px;
+}
+
+#consultaTitulo {
+	text-align: left;
+	float: left;
+	font-weight: bold;
+}
+
+div.consulta {
+	width: 100%;
+}
+
+div.consulta .linha {
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	text-align: left;
+	padding: 0px 0px 0px 5px;
+}
+
+div.consulta .linha .colunaTitulo {
+	width: 10%;
+	margin: 0 auto;
+	float: left;
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+div.consulta .linha .coluna {
+	width: 10%;
+	margin: 0 auto;
+	float: left;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+
+/** estilo utilizado em relatorios **/
+div.relatorio {
+	width: 500px;
+	float: left;
+	margin-left: 150px;
+}
+
+div.relatorio .linhaTitulo {
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	margin-top: 0.5px;
+	margin-bottom: 0.5px;
+}
+
+div.relatorio .linha {
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	background-color: #E0E0E0;
+	margin-top: 0.5px;
+	margin-bottom: 0.5px;
+}
+
+div.relatorio .linha .colunaTitulo {
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+	text-align: left;
+	font-weight: bold;
+}
+
+div.relatorio .linha .colunaTituloDireita {
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+	text-align: right;
+	font-weight: bold;
+}
+
+div.relatorio .linha .coluna {
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+	text-align: left;
+}
+
+div.relatorio .linha .colunaDireita {
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+	text-align: right;
+}
+
+/** estilo das mensagem do form **/
+#erro {
+	color: red;
+	font-size: 11px;
+}
+
+#lembrete {
+	font-style: italic;
+	color: #999999;
+	padding-left: 10px;
+}
+
+/** bot�o LINK **/
+
+
+.linkButton {
+	-moz-box-shadow:inset 0px -1px 0px 0px #40a140;
+	-webkit-box-shadow:inset 0px -1px 0px 0px #40a140;
+	box-shadow:inset 0px -1px 0px 0px #40a140;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #337312), color-stop(1, #549633) );
+	background:-moz-linear-gradient( center top, #337312 5%, #549633 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#337312', endColorstr='#549633');
+	background-color:#337312;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #307821;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:3px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #0e4d0e;
+}.linkButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #549633), color-stop(1, #337312) );
+	background:-moz-linear-gradient( center top, #549633 5%, #337312 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#549633', endColorstr='#337312');
+	background-color:#549633;
+}.linkButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.buttonsImage {
+	float: left;;
+	margin-bottom: 14px;
+	text-align: left;
+	margin-right: 5px;
+}
+
+.linkButton, #consultNotificacao{ 
+	height: 20px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFD700), color-stop(1, #FFF000) );
+	background:-moz-linear-gradient( center top, #FFD700 5%, #FFF000 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD700', endColorstr='#FFF000');
+	
+	line-height:20px;
+	border:1px #FF9900;
+	box-shadow:none;
+	color: black;
+	text-shadow:none;
+	outline:none;
+	
+}
+
+.linkButton:hover, #consultNotificacao:hover{ 
+	height: 20px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFF000), color-stop(1, #FFD700) );
+	background:-moz-linear-gradient( center top, #FFF000 5%, #FFD700 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF000', endColorstr='#FFD700');
+	
+	line-height:20px;
+	border:1px #FF9900;
+	box-shadow:none;
+	color: black;
+	text-shadow:none;
+	outline:none;
+	
+}
+
+.linkButton img{
+	float:left;
+	margin:3px 5px 3px 0;
+	padding: 0;
+}
+
+#aviso_caps_lock
+{
+	visibility: hidden;
+	text-align: center;
+	color: red; 
+	margin-bottom: 10px;
+}
+
+.back
+{
+	background: url("../images/back.png") no-repeat left center;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.grafico {
+	margin-top: 5px;
+	width: 850px;
+	height: 500px;
+}
